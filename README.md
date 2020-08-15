@@ -127,6 +127,12 @@ How to use and configure a main.tf file
 ```
 terraform {
   required_version = ">= 0.12"
+  required_providers {
+    esxi = {
+      source  = "registry.terraform.io/josenk/esxi"
+      version = "~> 1.7.1"
+    }
+  }
 }
 
 provider "esxi" {
